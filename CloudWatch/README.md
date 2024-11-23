@@ -25,6 +25,7 @@ This project demonstrates setting up an EC2 instance to host a CSS template and 
 2. Assign the role to the EC2 instance.
 
 ![Preview](Images/2.png)
+![Preview](Images/5.png)
 
 ### Install CloudWatch Agent
 1. SSH into the EC2 instance:
@@ -68,6 +69,10 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -c file:/opt/aws/amazon-cloudwatch-agent/etc/config.json \
   -s
 ```
+Check agent is running or not
+  ![preview](Images/6.png)
+
+
 ## Host a CSS Template
 1. Install nginx and download the template
 
@@ -87,5 +92,8 @@ sudo systemctl restart nginx
 ```
 ### Verify
 Access the application at http://instance-public-ip/lists.
-Check /ec2/logs in CloudWatch for system logs.
+Check EC2logs in CloudWatch for system logs.
 ![preview](Images/4.png)
+
+
+
