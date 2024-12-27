@@ -31,8 +31,8 @@ Before you begin, ensure you have:
 
   #### Test-1 : 
    - Turning off and turning on the instance and checking its public ip
-  ![e](Images/img2.png)
-  ![r](Images/img3.png)
+  ![](Images/img2.png)
+  ![](Images/img3.png)
 
    -  From the above picture, we Concluded that turning off and turning on the instance makes changes in public IP 
     i.e, from ***"44.244.218.225"*** to ***"35.88.64.4"***
@@ -45,8 +45,8 @@ Before you begin, ensure you have:
 3. Choose **Amazon’s pool of IPv4 addresses** and click **Allocate**.
 4. Note down the Elastic IP address allocated.
 
-![EC2 Instance Screenshot](images/img4.png)
-![h](images/img5.png)
+![](images/img4.png)
+![](images/img5.png)
 
 ### Step 3: Associate the Elastic IP with the EC2 Instance
 
@@ -55,21 +55,21 @@ Before you begin, ensure you have:
 3. Choose the instance you launched earlier from the list.
 4. Click **Associate** to attach the Elastic IP to the instance.
 
-![y](images/img6.png)
-![y](images/img7.png)
+![](images/img6.png)
+![](images/img7.png)
 
 ### Step 4: Verify the Elastic IP
 
 1. Go back to the EC2 Dashboard and select your instance.
 2. Verify that the **Public IPv4 address** matches the allocated Elastic IP.
 
-![u](images/img8.png)
+![](images/img8.png)
 
   #### Test-2 : 
   - Stop and start the instance, then recheck the public IP. It should remain the same.
 
-![i](Images/img9.png)
-![o](images/img10.png) 
+![](Images/img9.png)
+![](images/img10.png) 
 
 ## Explanation
 
@@ -80,11 +80,11 @@ Elastic IP addresses in AWS allow you to have a static public IP address for you
 
 - Ensure that your Elastic IP is released when not in use to avoid unnecessary charges.
  #### Step
- ![p](images/img11.png)
+ ![](images/img11.png)
 - before releasing make sure that Elastic ip is diassociated from EC2
 - Instance automatically gets a Dynamic Public IP after diassociating the Elastic ip from EC2
 
- ![z](images/img12.png)
+ ![](images/img12.png)
 
 - Elastic IPs are region-specific, so ensure you are in the correct region when managing them.
 
