@@ -45,8 +45,8 @@ Before you begin, ensure you have:
 3. Choose **Amazon’s pool of IPv4 addresses** and click **Allocate**.
 4. Note down the Elastic IP address allocated.
 
-![](images/img4.png)
-![](images/img5.png)
+![](Images/img4.png)
+![](Images/img5.png)
 
 ### Step 3: Associate the Elastic IP with the EC2 Instance
 
@@ -55,21 +55,21 @@ Before you begin, ensure you have:
 3. Choose the instance you launched earlier from the list.
 4. Click **Associate** to attach the Elastic IP to the instance.
 
-![](images/img6.png)
-![](images/img7.png)
+![](Images/img6.png)
+![](Images/img7.png)
 
 ### Step 4: Verify the Elastic IP
 
 1. Go back to the EC2 Dashboard and select your instance.
 2. Verify that the **Public IPv4 address** matches the allocated Elastic IP.
 
-![](images/img8.png)
+![](Images/img8.png)
 
   #### Test-2 : 
   - Stop and start the instance, then recheck the public IP. It should remain the same.
 
 ![](Images/img9.png)
-![](images/img10.png) 
+![](Images/img10.png) 
 
 ## Explanation
 
@@ -80,11 +80,11 @@ Elastic IP addresses in AWS allow you to have a static public IP address for you
 
 - Ensure that your Elastic IP is released when not in use to avoid unnecessary charges.
  #### Step
- ![](images/img11.png)
+ ![](Images/img11.png)
 - before releasing make sure that Elastic ip is diassociated from EC2
 - Instance automatically gets a Dynamic Public IP after diassociating the Elastic ip from EC2
 
- ![](images/img12.png)
+ ![](Images/img12.png)
 
 - Elastic IPs are region-specific, so ensure you are in the correct region when managing them.
 
