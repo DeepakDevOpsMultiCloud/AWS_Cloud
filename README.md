@@ -1,1 +1,1 @@
-![](./EC2/Images/AWS.png)
+![](./EC2/Images/AWS.png)          
