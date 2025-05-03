@@ -1,0 +1,17 @@
+aws cloudwatch get-metric-data \
+  --metric-data-queries '[{"MetricDataQuery": {"MetricName": "CPUUtilization","Dimensions": [{"Name": "InstanceId", "Value": "i-0123456789abcdef"}]}, {"MetricDataQuery": {"MetricName": "DiskReadBytes","Dimensions": [{"Name": "InstanceId", "Value": "i-0123456789abcdef"}]}}]' \
+  --start-time "2023-10-26T00:00:00" \
+  --end-time "2023-10-26T00:30:00" \
+  --scan-by 'Name' \
+  --statistics "Sum" \
+  --period 300
+
+
+aws cloudwatch get-metric-statistics \
+  --metric-name CPUUtilization \
+  --namespace "AWS/EC2" \
+  --dimensions Name=InstanceId,Value=i-0123456789abcdef \
+  --start-time "2023-10-26T00:00:00" \
+  --end-time "2023-10-26T00:30:00" \
+  --period 300 \
+  --statistics Sum
