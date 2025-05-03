@@ -1,2 +1,1 @@
-![](./Images/WAF.png
-)
+![](./Images/AWS_WAF_Logo.jpg)
