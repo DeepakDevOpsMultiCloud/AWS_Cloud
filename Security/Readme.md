@@ -1,6 +1,6 @@
 ![](./Images/AWS_WAF_Logo.jpg) 
 ![](./Images/AWS-Shield-Logo.png)
-![](./Images/NetworkFireWall.png)
-![](./Images/GaurdDuty.jpg)
 ![](./Images/IAM.png)
 ![](./Images/SSO.png)
+![](./Images/NetworkFireWall.png)
+![](./Images/GaurdDuty.jpg)
